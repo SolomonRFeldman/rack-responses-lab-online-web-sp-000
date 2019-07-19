@@ -2,7 +2,8 @@ class Application
   
   def call(env)
     resp = Rack::Response.new
-    if time.now <= 12
+    if Time.now.hour <= 12
+      send
   end
   
 end
